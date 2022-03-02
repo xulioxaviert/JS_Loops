@@ -35,3 +35,26 @@ for (let i = 0; i < alumns.length; i++) {
 }
 
 console.log(alumns);
+
+/////// segunda manera de hacerlo
+
+for (const cities of alumns) {
+  if (cities.T1 == true) {
+    index = index + 1;
+  }
+
+  if (cities.T2 == true) {
+    index = index + 1;
+  }
+  if (cities.T3 == true) {
+    index = index + 1;
+  }
+
+  if (index >= 2) {
+    cities["isApproved"] = true;
+  } else {
+    cities["isApproved"] = false;
+  }
+  index = 0;
+}
+console.log(alumns);

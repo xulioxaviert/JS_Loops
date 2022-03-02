@@ -58,3 +58,5 @@ for (const cities of alumns) {
   index = 0;
 }
 console.log(alumns);
+
+///

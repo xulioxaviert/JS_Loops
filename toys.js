@@ -13,7 +13,7 @@ const toys = [
 
 for (let deleteToys of toys) {
     if (deleteToys.name.includes("gato")) {
-    toys.splice(toys.indexOf(deleteToys));
+    toys.splice(toys.indexOf(deleteToys), 1);
     console.log("dentro del if");
   }
 }
